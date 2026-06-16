@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- SEO META -->
+<title>Sandesh | Nepal's News Portal — सन्देश</title>
+<meta name="description" content="Sandesh (सन्देश) is Nepal's trusted online news portal. Breaking news from Nepal, politics, economy, sports, and world news in English. Updated daily from Kathmandu."/>
+<meta name="keywords" content="Nepal news, Nepal news today, Kathmandu news, Nepal politics, Nepal cricket, Nepal budget 2026, Balen Shah, Sandesh news, सन्देश, nepali news english"/>
+<meta name="author" content="Sandesh Editorial Team"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://sandesh.com.np/"/>
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Sandesh — Nepal's News Portal"/>
+<meta property="og:title" content="Sandesh | Nepal's News Portal — सन्देश"/>
+<meta property="og:description" content="Breaking Nepal news, politics, economy, sports and world news. Updated daily."/>
+<meta property="og:url" content="https://sandesh.com.np/"/>
+<meta property="og:image" content="https://sandesh.com.np/images/og-sandesh.jpg"/>
+<meta property="og:locale" content="en_NP"/>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@SandeshNepal"/>
+<meta name="twitter:title" content="Sandesh | Nepal's News Portal"/>
+<meta name="twitter:description" content="Breaking Nepal news: politics, economy, sports and world news. Updated daily."/>
+<meta name="twitter:image" content="https://sandesh.com.np/images/og-sandesh.jpg"/>
+<!-- Schema.org -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsMediaOrganization","name":"Sandesh","alternateName":"सन्देश","url":"https://sandesh.com.np","logo":{"@type":"ImageObject","url":"https://sandesh.com.np/images/logo.png"},"foundingLocation":{"@type":"Place","name":"Kathmandu, Nepal"}}</script>
+<!-- Favicon: red S in tab — no image file needed -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23c0392b'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia%2Cserif' font-size='20' font-weight='bold' fill='%23fff'%3ES%3C/text%3E%3C/svg%3E"/>
+<link rel="shortcut icon" href="images/favicon.png" type="image/png"/>
+<link rel="apple-touch-icon" href="images/favicon.png"/>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet"/>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--red:#c0392b;--dark:#1a1a1a;--border:#e2e2e2;--light:#f5f5f5;--serif:'Merriweather',Georgia,serif;--sans:'Source Sans 3',Verdana,sans-serif}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);font-size:14px;color:#2c2c2c;background:#ccc;text-align:center;-webkit-text-size-adjust:100%}
+a{color:var(--red);text-decoration:none}
+a:hover{color:#000}
+img{border:0;max-width:100%;display:block}
+ul,ol{list-style:none}
+
+/* WRAPPER */
+#wrapper{width:970px;max-width:100%;margin:0 auto;background:#fff;text-align:left;box-shadow:0 0 20px rgba(0,0,0,.18)}
+
+/* HEADER */
+#header{background:#fff;border-bottom:3px solid var(--red)}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:5px 14px;border-bottom:1px solid var(--border);font-family:var(--sans);font-size:11px;flex-wrap:wrap;gap:4px}
+.topbar-nav{display:flex;flex-wrap:wrap}
+.topbar-nav a{color:#444;padding:0 11px;border-left:1px solid #ccc;text-transform:uppercase;font-size:10px;letter-spacing:.05em}
+.topbar-nav a:first-child{border-left:0}
+.topbar-nav a:hover,.topbar-nav a.active{color:var(--red)}
+.topbar-right{color:#777;font-size:10px}
+.topbar-right a{color:var(--red);margin-left:7px}
+.masthead{display:flex;align-items:center;justify-content:space-between;padding:12px 16px 8px;gap:10px;flex-wrap:wrap}
+.logo h1{font-family:var(--serif);font-size:2.6em;text-transform:uppercase;letter-spacing:-1px;color:var(--red);line-height:1}
+.logo .tagline{font-size:11px;color:#999;letter-spacing:.14em;text-transform:uppercase;padding-left:3px}
+.logo .dateline{font-size:10px;color:#bbb;padding-left:3px;margin-top:2px}
+#ad-banner{text-align:right;flex-shrink:0}
+#ad-banner img{max-height:60px;max-width:468px}
+.ad-ph{display:inline-flex;align-items:center;justify-content:center;width:468px;max-width:100%;height:60px;background:var(--light);border:1px dashed #ccc;font-size:11px;color:#bbb}
+.catnav{background:var(--dark);display:flex;flex-wrap:wrap;min-height:36px}
+.catnav li a{color:#fff;display:block;padding:10px 13px;font-family:var(--sans);font-size:11px;text-transform:uppercase;letter-spacing:.04em;line-height:16px;white-space:nowrap}
+.catnav li a:hover,.catnav li a.active{background:var(--red);color:#fff}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px}
+.hamburger span{display:block;width:22px;height:2px;background:var(--dark);margin:4px 0}
+
+/* TICKER */
+#ticker{background:var(--red);display:flex;align-items:center;height:30px;overflow:hidden;font-family:var(--sans);font-size:11px}
+.ticker-label{background:#8b0000;padding:0 12px;white-space:nowrap;height:100%;display:flex;align-items:center;font-weight:700;letter-spacing:.05em;color:#fff;flex-shrink:0}
+.ticker-track{flex:1;overflow:hidden}
+.ticker-inner{display:inline-flex;align-items:center;white-space:nowrap;animation:scroll 55s linear infinite;color:#fff;height:30px}
+.ticker-inner span{padding-right:60px}
+.ticker-inner span::before{content:'▶ ';opacity:.7}
+@keyframes scroll{0%{transform:translateX(100vw)}100%{transform:translateX(-100%)}}
+
+/* MOBILE SEARCH */
+.mobile-search{display:none;padding:8px 12px;border-bottom:1px solid var(--border)}
+.mobile-search form{display:flex;border:1px solid #ccc}
+.mobile-search input{flex:1;border:0;padding:7px 10px;font-size:13px;font-family:var(--sans);outline:none;background:var(--light)}
+.mobile-search button{background:var(--dark);color:#fff;border:0;padding:0 14px;font-size:11px;cursor:pointer;text-transform:uppercase}
+.mobile-search button:hover{background:var(--red)}
+
+/* LAYOUT */
+#main{display:flex;align-items:flex-start}
+
+/* CONTENT */
+#content{flex:1;min-width:0;border-right:1px solid var(--border)}
+#hero{padding:16px 18px 14px;border-bottom:1px solid var(--border)}
+.hero-label{display:inline-block;background:var(--red);color:#fff;font-family:var(--sans);font-size:10px;text-transform:uppercase;letter-spacing:.1em;padding:2px 8px;margin-bottom:8px}
+#hero h2{font-family:var(--serif);font-size:1.75em;line-height:1.25;color:#111;margin-bottom:8px}
+#hero h2 a{color:#111}
+#hero h2 a:hover{color:var(--red)}
+.hero-meta{font-family:var(--sans);font-size:10px;color:#aaa;margin-bottom:10px}
+#hero p{line-height:1.65;color:#444;font-size:.92em}
+.sec-label{font-family:var(--sans);font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:#888;padding:12px 18px 6px;border-top:1px solid var(--border);border-bottom:2px solid var(--dark);display:flex;align-items:center;gap:7px}
+.sec-label::before{content:'';display:inline-block;width:9px;height:9px;background:var(--red);flex-shrink:0}
+.post-grid{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--border)}
+.post-grid .post{border-right:1px solid var(--border)}
+.post-grid .post:last-child{border-right:0}
+.two-col{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border)}
+.two-col .post{border-right:1px solid var(--border)}
+.two-col .post:last-child{border-right:0}
+.post{padding:12px 14px}
+.post .thumb{height:88px;overflow:hidden;background:#f0f0f0;border:1px solid var(--border);margin-bottom:8px}
+.post .thumb img,.post .thumb svg{width:100%;height:88px;object-fit:cover}
+.post .cat-tag{display:inline-block;font-family:var(--sans);font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--red);margin-bottom:3px}
+.post h2{font-family:var(--serif);font-size:.9em;line-height:1.35;margin-bottom:5px}
+.post h2 a{color:var(--dark)}
+.post h2 a:hover{color:var(--red)}
+.post .date{font-family:var(--sans);font-size:10px;color:#bbb;margin-bottom:5px}
+.post p{font-size:.83em;line-height:1.55;color:#555;margin-bottom:8px}
+.post .continue{display:inline-block;background:var(--red);color:#fff;font-family:var(--sans);font-size:10px;padding:3px 9px;text-transform:uppercase}
+.post .continue:hover{background:#8b0000;color:#fff}
+
+/* SIDEBAR */
+#sidebar{width:278px;flex-shrink:0;padding-bottom:20px;font-family:var(--sans)}
+.sidebar-inner{padding:0 13px}
+#sidebar-ads{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:10px 0}
+#sidebar-ads a img{width:119px;height:119px;object-fit:cover}
+.ad-block-ph{width:119px;height:119px;background:var(--light);border:1px dashed #ccc;display:flex;align-items:center;justify-content:center;font-size:10px;color:#bbb;text-align:center;padding:4px}
+.sb-search{display:flex;border:1px solid #ccc;margin:10px 0}
+.sb-search input{flex:1;border:0;padding:6px 9px;font-size:12px;font-family:var(--sans);outline:none;background:var(--light);min-width:0}
+.sb-search button{background:var(--dark);color:#fff;border:0;padding:6px 11px;font-size:11px;cursor:pointer;text-transform:uppercase;white-space:nowrap}
+.sb-search button:hover{background:var(--red)}
+#sidebar h3{color:var(--dark);font-size:10px;font-family:var(--sans);text-transform:uppercase;letter-spacing:.1em;margin:14px 0 7px;padding-bottom:4px;border-bottom:2px solid var(--dark);display:flex;align-items:center;gap:6px}
+#sidebar h3::before{content:'';display:inline-block;width:8px;height:8px;background:var(--red)}
+#sidebar ul{list-style:none}
+#sidebar ul li{border-bottom:1px dotted #ddd;padding:5px 0;line-height:1.4}
+#sidebar ul li a{color:#555;font-size:11px}
+#sidebar ul li a:hover{color:var(--red)}
+.weather-widget{background:var(--light);border:1px solid var(--border);padding:10px;text-align:center;margin:7px 0}
+.weather-widget .city{font-size:10px;color:#999;text-transform:uppercase;letter-spacing:.1em}
+.weather-widget .temp{font-size:2em;color:var(--red);font-family:var(--serif);line-height:1.2}
+.weather-widget .cond{font-size:11px;color:#666}
+.tag-cloud{padding:7px 0}
+.tag-cloud a{display:inline-block;background:var(--light);color:#555;font-size:10px;padding:3px 7px;margin:2px 2px 2px 0;border:1px solid #e0e0e0}
+.tag-cloud a:hover{background:var(--red);color:#fff;border-color:var(--red)}
+.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:6px 0}
+.photo-grid img{height:58px;width:100%;object-fit:cover;background:#f0f0f0}
+.photo-grid div{height:58px;background:#eee}
+
+/* FOOTER */
+#footer{background:var(--dark);color:#999;font-family:var(--sans);font-size:11px;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+#footer a{color:#ccc}
+#footer a:hover{color:var(--red)}
+.footer-links{display:flex;gap:14px;flex-wrap:wrap}
+
+/* SINGLE / ABOUT / CONTACT */
+.single{padding:20px 18px}
+.single h2{font-family:var(--serif);font-size:1.5em;margin-bottom:12px;color:#111}
+.single p{line-height:1.65;margin-bottom:10px;color:#444}
+.contact-form{padding:0 18px 24px}
+.contact-form h3{font-family:var(--serif);font-size:1.1em;margin-bottom:14px;color:var(--dark)}
+.contact-form label{font-size:11px;color:#888;display:block;margin-bottom:3px;margin-top:10px}
+.contact-form input[type="text"],.contact-form textarea{border:1px solid #ccc;padding:7px 10px;font-size:13px;font-family:var(--sans);width:100%;max-width:440px;display:block}
+.contact-form textarea{height:120px;resize:vertical;max-width:540px}
+.contact-form button{background:var(--red);color:#fff;border:0;padding:9px 22px;font-size:12px;font-family:var(--sans);cursor:pointer;text-transform:uppercase;margin-top:10px}
+.contact-form button:hover{background:#8b0000}
+
+/* TABLET */
+@media(max-width:768px){
+  #wrapper{width:100%;box-shadow:none}
+  .topbar{display:none}
+  .masthead{padding:10px 12px 6px;flex-wrap:nowrap}
+  .logo h1{font-size:1.9em}
+  #ad-banner{display:none}
+  .hamburger{display:block}
+  .catnav{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .catnav::-webkit-scrollbar{display:none}
+  .catnav li a{padding:9px 11px;font-size:10px}
+  .mobile-search{display:block}
+  #main{flex-direction:column}
+  #content{border-right:0;border-bottom:1px solid var(--border)}
+  .post-grid{grid-template-columns:1fr 1fr}
+  .post-grid .post:nth-child(2){border-right:0}
+  .post-grid .post:last-child{grid-column:1/-1;border-right:0;border-top:1px solid var(--border)}
+  .two-col{grid-template-columns:1fr}
+  .two-col .post{border-right:0;border-bottom:1px solid var(--border)}
+  #sidebar{width:100%;padding:0 0 16px}
+  #sidebar-ads{justify-content:center}
+  #hero h2{font-size:1.35em}
+}
+
+/* PHONE */
+@media(max-width:480px){
+  .logo h1{font-size:1.55em}
+  .logo .tagline{display:none}
+  .post-grid{grid-template-columns:1fr}
+  .post-grid .post{border-right:0;border-bottom:1px solid var(--border)}
+  .post-grid .post:last-child{grid-column:auto}
+  #hero{padding:12px}
+  #hero h2{font-size:1.15em}
+  #footer{flex-direction:column;text-align:center}
+  .footer-links{justify-content:center}
+}
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+<div id="wrapper">
+
+<!-- HEADER -->
+<div id="header">
+  <div class="topbar">
+    <nav class="topbar-nav" role="navigation" aria-label="Main navigation">
+      <a href="#" id="nav-home" onclick="showPage('home');return false;" class="active">Home</a>
+      <a href="#" id="nav-about" onclick="showPage('about');return false;">About Us</a>
+      <a href="#" id="nav-contact" onclick="showPage('contact');return false;">Contact</a>
+    </nav>
+    <p class="topbar-right">Subscribe: <a href="#">Email</a> | <a href="#">RSS</a></p>
+  </div>
+  <div class="masthead">
+    <div class="logo">
+      <h1><a href="#" onclick="showPage('home');return false;" aria-label="Sandesh Nepal News Portal">Sandesh</a></h1>
+      <p class="tagline">सन्देश — Nepal's News Portal</p>
+      <p class="dateline" id="todays-date"></p>
+    </div>
+    <!-- BANNER AD: change href + img src below -->
+    <div id="ad-banner">
+      <a href="#" rel="nofollow noopener">
+        <img src="images/ads1.png" alt="Advertisement"
+             onerror="this.parentElement.outerHTML='&lt;span class=&quot;ad-ph&quot;&gt;468 × 60 — Your Advertisement Here&lt;/span&gt;'"/>
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <ul class="catnav" id="catnav" role="menubar" aria-label="News categories">
+    <li role="none"><a href="#" class="active" onclick="filterCat('all',this);return false;" role="menuitem">All</a></li>
+    <li role="none"><a href="#" onclick="filterCat('nepal',this);return false;" role="menuitem">Nepal</a></li>
+    <li role="none"><a href="#" onclick="filterCat('politics',this);return false;" role="menuitem">Politics</a></li>
+    <li role="none"><a href="#" onclick="filterCat('economy',this);return false;" role="menuitem">Economy</a></li>
+    <li role="none"><a href="#" onclick="filterCat('sports',this);return false;" role="menuitem">Sports</a></li>
+    <li role="none"><a href="#" onclick="filterCat('world',this);return false;" role="menuitem">World</a></li>
+    <li role="none"><a href="#" onclick="filterCat('technology',this);return false;" role="menuitem">Technology</a></li>
+  </ul>
+</div>
+
+<!-- TICKER -->
+<div id="ticker" aria-live="polite" aria-label="Breaking news">
+  <div class="ticker-label">⚡ Breaking</div>
+  <div class="ticker-track">
+    <div class="ticker-inner">
+      <span>Nepal wins Asian Games T20I Qualifier — beats Hong Kong in DLS final in Singapore</span>
+      <span>National Assembly budget debate stalls fourth time as opposition protests PM Shah's border remarks</span>
+      <span>Nepal unveils historic Rs 2.124 trillion budget for FY 2026/27 — largest ever</span>
+      <span>Fatal bus accident in Kavrepalanchok: 8 dead, 16 injured</span>
+      <span>Elon Musk becomes world's first trillionaire as SpaceX makes historic stock market debut</span>
+      <span>NEPSE closes at 2,735.14 — falls 20.27 points</span>
+      <span>Dipendra Singh Airee shortlisted for ICC Player of the Month — June 2026</span>
+      <span>Global Consumer Expo 2026 at Bhrikutimandap wraps up — 35,000+ visitors</span>
+      <span>Nepal achieves milk self-sufficiency — dairy exports grew 71% in four years</span>
+    </div>
+  </div>
+</div>
+
+<!-- MOBILE SEARCH -->
+<div class="mobile-search">
+  <form onsubmit="doSearch(event)">
+    <input type="search" id="mobile-q" placeholder="Search Sandesh…" aria-label="Search news"/>
+    <button type="submit">Search</button>
+  </form>
+</div>
+
+<!-- HOME PAGE -->
+<div id="page-home">
+  <div id="main">
+    <main id="content" role="main">
+
+      <!-- HERO -->
+      <article id="hero" itemscope itemtype="https://schema.org/NewsArticle">
+        <meta itemprop="datePublished" content="2026-06-16"/>
+        <meta itemprop="author" content="Sandesh Desk"/>
+        <span class="hero-label">🔴 Top Story — Economy</span>
+        <h2 itemprop="headline"><a href="#">Nepal Unveils Historic Rs 2.124 Trillion Budget — Biggest in Nation's History</a></h2>
+        <p class="hero-meta">June 16, 2026 · Economy · Sandesh Desk</p>
+        <p itemprop="description">Finance Minister Dr. Swarnim Wagle presented Nepal's largest-ever federal budget of Rs 2,124.34 billion for Fiscal Year 2026/27 in a joint sitting of Parliament — a 25.2% expansion over the current year's revised estimates. The budget targets 7% economic growth, caps inflation at 6%, and promises sweeping tax reforms, massive infrastructure investment and an overhaul of public institutions. Civil servant salaries will rise approximately 21%, with minimum monthly pay ranging from Rs 40,000 to Rs 100,000. Business groups have welcomed the package but warn weak inter-agency coordination could jeopardise the ambitious targets.</p>
+      </article>
+
+      <!-- NEPAL -->
+      <p class="sec-label" data-cat="nepal">Nepal</p>
+      <div class="post-grid">
+        <article class="post" data-cat="nepal politics" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 260 88" xmlns="http://www.w3.org/2000/svg"><rect fill="#c0392b" width="260" height="88"/><polygon points="130,12 155,65 105,65" fill="#fff" opacity=".8"/></svg>
+          </div>
+          <span class="cat-tag">Politics</span>
+          <p class="date">June 16, 2026</p>
+          <h2 itemprop="headline"><a href="#">PM Shah's Border Remarks Paralyse Parliament — Budget Debate Delayed Fourth Time</a></h2>
+          <p>The National Assembly adjourned yet again as opposition parties boycotted budget proceedings over PM Balendra Shah's claim that both Nepal and India have encroached each other's territory — triggering a full diplomatic row.</p>
+          <a href="#" class="continue">Read More</a>
+        </article>
+        <article class="post" data-cat="nepal" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 260 88" xmlns="http://www.w3.org/2000/svg"><rect fill="#1a3a1a" width="260" height="88"/><text x="130" y="56" text-anchor="middle" fill="#5adb5a" font-size="36">🚌</text></svg>
+          </div>
+          <span class="cat-tag">Nepal</span>
+          <p class="date">June 14, 2026</p>
+          <h2 itemprop="headline"><a href="#">Bus Accident in Kavrepalanchok Kills 8, Injures 16 — Police Form Probe Committee</a></h2>
+          <p>Nepal Police has formed a six-member investigation committee after a fatal bus accident in Kavrepalanchok killed eight people and injured 16 others. Authorities are examining road conditions and vehicle fitness records.</p>
+          <a href="#" class="continue">Read More</a>
+        </article>
+        <article class="post" data-cat="nepal economy" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 260 88" xmlns="http://www.w3.org/2000/svg"><rect fill="#003355" width="260" height="88"/><text x="130" y="50" text-anchor="middle" fill="#fff" font-size="12">Asset Investigation</text><text x="130" y="68" text-anchor="middle" fill="#c0392b" font-size="11">Commission 2026</text></svg>
+          </div>
+          <span class="cat-tag">Economy</span>
+          <p class="date">June 15, 2026</p>
+          <h2 itemprop="headline"><a href="#">Why Nepal's Business Tycoons Are Being Asked to Declare Their Assets</a></h2>
+          <p>PM Balen Shah's Asset Investigation Commission, formed in April 2026, now targets business leaders under a broad legal definition of "public official" — far wider than anticipated when the watchdog was established.</p>
+          <a href="#" class="continue">Read More</a>
+        </article>
+      </div>
+
+      <!-- POLITICS -->
+      <p class="sec-label" data-cat="politics">Politics</p>
+      <div class="two-col">
+        <article class="post" data-cat="politics nepal" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 260 88" xmlns="http://www.w3.org/2000/svg"><rect fill="#222" width="260" height="88"/><rect x="20" y="30" width="220" height="9" fill="#c0392b" rx="2"/><rect x="20" y="50" width="160" height="7" fill="#666" rx="2"/></svg>
+          </div>
+          <span class="cat-tag">Politics</span>
+          <p class="date">June 14, 2026</p>
+          <h2 itemprop="headline"><a href="#">Supreme Court Shifts Child Soldier Cases to Transitional Justice Bodies</a></h2>
+          <p>Nepal's Supreme Court has referred pending child soldier cases from the civil conflict era to the transitional justice framework, ordering legislative reforms to accelerate justice for victims after years of delay.</p>
+          <a href="#" class="continue">Read More</a>
+        </article>
+        <article class="post" data-cat="politics" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 260 88" xmlns="http://www.w3.org/2000/svg"><rect fill="#1c3a5e" width="260" height="88"/><text x="130" y="52" text-anchor="middle" fill="#fff" font-size="12">House of Representatives</text></svg>
+          </div>
+          <span class="cat-tag">Politics</span>
+          <p class="date">June 13, 2026</p>
+          <h2 itemprop="headline"><a href="#">Intangible Cultural Heritage (Preservation) Bill 2026 Tabled at HoR</a></h2>
+          <p>A proposal to advance the Intangible Cultural Heritage (Preservation) Bill 2026 was tabled at the House of Representatives, aimed at safeguarding Nepal's oral traditions, performing arts, and cultural practices.</p>
+          <a href="#" class="continue">Read More</a>
+        </article>
+      </div>
+
+      <!-- ECONOMY -->
+      <p class="sec-label" data-cat="economy">Economy</p>
+      <div class="post-grid">
+        <article class="post" data-cat="economy nepal" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 260 88" xmlns="http://www.w3.org/2000/svg"><rect fill="#1a1a1a" width="260" height="88"/><rect x="30" y="55" width="24" height="25" fill="#c0392b"/><rect x="64" y="38" width="24" height="42" fill="#c0392b"/><rect x="98" y="22" width="24" height="58" fill="#c0392b"/><rect x="132" y="44" width="24" height="36" fill="#888"/><rect x="166" y="30" width="24" height="50" fill="#c0392b" opacity=".7"/></svg>
+          </div>
+          <span class="cat-tag">Economy</span>
+          <p class="date">June 16, 2026</p>
+          <h2 itemprop="headline"><a href="#">Nepal Achieves Milk Self-Sufficiency — Dairy Exports Grew 71% in Four Years</a></h2>
+          <p>Nepal's total milk output reached 2.71 million tonnes. Dairy exports surged 71% over four years to Rs 4.638 billion, while imports fell sharply to Rs 142.4 million — a major win for Nepal's agricultural sector.</p>
+          <a href="#" class="continue">Read More</a>
+        </article>
+        <article class="post" data-cat="economy" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 260 88" xmlns="http://www.w3.org/2000/svg"><rect fill="#002244" width="260" height="88"/><text x="130" y="46" text-anchor="middle" fill="#ffcc00" font-size="18">NEPSE ▼</text><text x="130" y="68" text-anchor="middle" fill="#ff4444" font-size="14">2,735.14</text></svg>
+          </div>
+          <span class="cat-tag">Markets</span>
+          <p class="date">June 15, 2026</p>
+          <h2 itemprop="headline"><a href="#">NEPSE Falls 20 Points to 2,735 — NRB Seeks Monetary Policy Input by June 19</a></h2>
+          <p>Nepal Stock Exchange closed in negative territory, falling 20.27 points. The Nepal Rastra Bank has invited stakeholder feedback on the upcoming 2026/27 Monetary Policy by June 19 to align it with the national budget framework.</p>
+          <a href="#" class="continue">Read More</a>
+        </article>
+        <article class="post" data-cat="economy nepal" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 260 88" xmlns="http://www.w3.org/2000/svg"><rect fill="#1a3320" width="260" height="88"/><text x="130" y="52" text-anchor="middle" fill="#5adb5a" font-size="22">⚡ Hydropower</text></svg>
+          </div>
+          <span class="cat-tag">Energy</span>
+          <p class="date">June 12, 2026</p>
+          <h2 itemprop="headline"><a href="#">Nepal's Hydropower Pitch at SPIEF: AI &amp; Data Centre Demand Opens New Export Opportunity</a></h2>
+          <p>At the St. Petersburg International Economic Forum, businessman Upendra Mahato urged global investors to fund Nepal's hydropower and transmission infrastructure, citing surging demand from AI, data centres and digital technology.</p>
+          <a href="#" class="continue">Read More</a>
+        </article>
+      </div>
+
+      <!-- SPORTS -->
+      <p class="sec-label" data-cat="sports">Sports</p>
+      <div class="post-grid">
+        <article class="post" data-cat="sports nepal" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 260 88" xmlns="http://www.w3.org/2000/svg"><rect fill="#005500" width="260" height="88"/><circle cx="130" cy="44" r="32" fill="none" stroke="#fff" stroke-width="2"/><circle cx="130" cy="44" r="6" fill="#c0392b"/></svg>
+          </div>
+          <span class="cat-tag">Cricket</span>
+          <p class="date">June 9, 2026</p>
+          <h2 itemprop="headline"><a href="#">Nepal Wins Asian Games T20I Qualifier — Sher Malla's Four-For Clinches Title</a></h2>
+          <p>Sher Malla's decisive four-wicket haul dismantled Hong Kong in the Asian Games qualifier final in Singapore. Dipendra Singh Airee has been shortlisted for ICC Player of the Month following the outstanding campaign.</p>
+          <a href="#" class="continue">Read More</a>
+        </article>
+        <article class="post" data-cat="sports nepal" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 260 88" xmlns="http://www.w3.org/2000/svg"><rect fill="#003366" width="260" height="88"/><text x="130" y="56" text-anchor="middle" fill="#fff" font-size="32">🏏</text></svg>
+          </div>
+          <span class="cat-tag">Cricket</span>
+          <p class="date">June 15, 2026</p>
+          <h2 itemprop="headline"><a href="#">National T20 Championship 2026 Underway — Runs June 15 to 25 Across Nepal</a></h2>
+          <p>CAN's National T20 Championship is now live, showcasing domestic talent before the monsoon break. Head coach Harshal Jayant Pathak is touring provinces to identify emerging U19 players during the tournament.</p>
+          <a href="#" class="continue">Read More</a>
+        </article>
+        <article class="post" data-cat="sports nepal" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 260 88" xmlns="http://www.w3.org/2000/svg"><rect fill="#8b0000" width="260" height="88"/><text x="130" y="54" text-anchor="middle" fill="#fff" font-size="24">🤸 NKL 2026</text></svg>
+          </div>
+          <span class="cat-tag">Kabaddi</span>
+          <p class="date">June 10, 2026</p>
+          <h2 itemprop="headline"><a href="#">Nepal Kabaddi League 2026: Second Season in Full Swing at NSC Covered Hall, Kathmandu</a></h2>
+          <p>Six franchise teams — including Biratnagar Bahubali, Kathmandu Mavericks and Pokhara Lakers — are competing through June 19 at the National Sports Council Covered Hall in Tripureshwor.</p>
+          <a href="#" class="continue">Read More</a>
+        </article>
+      </div>
+
+      <!-- WORLD -->
+      <p class="sec-label" data-cat="world">World</p>
+      <div class="two-col">
+        <article class="post" data-cat="world sports" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 260 88" xmlns="http://www.w3.org/2000/svg"><rect fill="#0d3d0d" width="260" height="88"/><text x="130" y="54" text-anchor="middle" fill="#fff" font-size="26">⚽ FIFA 2026</text></svg>
+          </div>
+          <span class="cat-tag">Football</span>
+          <p class="date">June 15, 2026</p>
+          <h2 itemprop="headline"><a href="#">FIFA World Cup 2026: Scotland Top Group C; Brazil Held by Morocco</a></h2>
+          <p>John McGinn's first-half strike secured Scotland a historic Group C lead. Brazil were held to a draw by Morocco despite Vinicius's stunning equaliser in the expanded 48-team 2026 World Cup in the United States.</p>
+          <a href="#" class="continue">Read More</a>
+        </article>
+        <article class="post" data-cat="world technology" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 260 88" xmlns="http://www.w3.org/2000/svg"><rect fill="#00002a" width="260" height="88"/><text x="130" y="44" text-anchor="middle" fill="#4488ff" font-size="13">SpaceX IPO</text><text x="130" y="64" text-anchor="middle" fill="#fff" font-size="11">World's First Trillionaire</text></svg>
+          </div>
+          <span class="cat-tag">Technology</span>
+          <p class="date">June 16, 2026</p>
+          <h2 itemprop="headline"><a href="#">Elon Musk Becomes World's First Trillionaire as SpaceX Lists on Stock Market</a></h2>
+          <p>SpaceX's historic stock market debut has pushed Elon Musk's net worth past the trillion-dollar milestone, making him the first person in history to achieve trillionaire status — a landmark moment in global finance.</p>
+          <a href="#" class="continue">Read More</a>
+        </article>
+      </div>
+
+      <!-- TECH & TOURISM -->
+      <p class="sec-label" data-cat="technology">Technology &amp; Tourism</p>
+      <div class="two-col">
+        <article class="post" data-cat="technology nepal" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 260 88" xmlns="http://www.w3.org/2000/svg"><rect fill="#151530" width="260" height="88"/><text x="130" y="50" text-anchor="middle" fill="#88aaff" font-size="18">AI · Data · Clean Energy</text></svg>
+          </div>
+          <span class="cat-tag">Technology</span>
+          <p class="date">June 13, 2026</p>
+          <h2 itemprop="headline"><a href="#">Nepal Eyes AI and Data Centre Demand to Grow Hydropower Exports Beyond 60 MW</a></h2>
+          <p>As global AI and data centre demand drives up energy consumption, Nepal is positioning its vast hydropower reserves as a key clean energy source, with investors urged to fund transmission infrastructure to scale exports.</p>
+          <a href="#" class="continue">Read More</a>
+        </article>
+        <article class="post" data-cat="nepal" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 260 88" xmlns="http://www.w3.org/2000/svg"><rect fill="#1a2a40" width="260" height="88"/><text x="130" y="52" text-anchor="middle" fill="#fff" font-size="17">🏔 Wellness Tourism</text></svg>
+          </div>
+          <span class="cat-tag">Tourism</span>
+          <p class="date">June 14, 2026</p>
+          <h2 itemprop="headline"><a href="#">Nepal Launches Wellness Tourism Push Following Successful HTM 2026</a></h2>
+          <p>Minister Khadak Raj Paudel announced plans to brand Nepal as a premier international wellness tourism destination after HTM 2026 attracted 600 delegates from 27 countries and hosted 75 international buying firms.</p>
+          <a href="#" class="continue">Read More</a>
+        </article>
+      </div>
+
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside id="sidebar" role="complementary" aria-label="Sidebar">
+      <!-- SIDEBAR ADS: update href + img src below to change ads -->
+      <div id="sidebar-ads">
+        <a href="#" rel="nofollow"><img src="images/ads2.png" alt="Ad 1" onerror="this.parentElement.innerHTML='&lt;div class=&quot;ad-block-ph&quot;&gt;125&times;125&lt;br&gt;Ad Here&lt;/div&gt;'"/></a>
+        <a href="#" rel="nofollow"><img src="images/ads2.png" alt="Ad 2" onerror="this.parentElement.innerHTML='&lt;div class=&quot;ad-block-ph&quot;&gt;125&times;125&lt;br&gt;Ad Here&lt;/div&gt;'"/></a>
+        <a href="#" rel="nofollow"><img src="images/ads2.png" alt="Ad 3" onerror="this.parentElement.innerHTML='&lt;div class=&quot;ad-block-ph&quot;&gt;125&times;125&lt;br&gt;Ad Here&lt;/div&gt;'"/></a>
+        <a href="#" rel="nofollow"><img src="images/ads2.png" alt="Ad 4" onerror="this.parentElement.innerHTML='&lt;div class=&quot;ad-block-ph&quot;&gt;125&times;125&lt;br&gt;Ad Here&lt;/div&gt;'"/></a>
+      </div>
+      <div class="sidebar-inner">
+        <form class="sb-search" onsubmit="doSearch(event)" role="search" aria-label="Site search">
+          <input type="search" id="sb-q" placeholder="Search Sandesh…" aria-label="Search"/>
+          <button type="submit">Go</button>
+        </form>
+        <h3>Weather — Kathmandu</h3>
+        <div class="weather-widget">
+          <p class="city">Kathmandu, Nepal</p>
+          <p class="temp">26°C</p>
+          <p class="cond">Partly Cloudy · Monsoon Season</p>
+        </div>
+        <h3>Popular Stories</h3>
+        <ul>
+          <li><a href="#">Nepal Wins Asian Games T20I Qualifier in Singapore</a></li>
+          <li><a href="#">Rs 2.124 Trillion Budget — Biggest in Nepal's History</a></li>
+          <li><a href="#">PM Shah's Border Remarks Paralyse Parliament</a></li>
+          <li><a href="#">Asset Investigation Commission Widens Scope</a></li>
+          <li><a href="#">NEPSE Falls to 2,735 — Markets Cautious</a></li>
+          <li><a href="#">Elon Musk Becomes World's First Trillionaire</a></li>
+        </ul>
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#" onclick="filterCat('nepal',null);return false;">Nepal</a></li>
+          <li><a href="#" onclick="filterCat('politics',null);return false;">Politics</a></li>
+          <li><a href="#" onclick="filterCat('economy',null);return false;">Economy</a></li>
+          <li><a href="#" onclick="filterCat('sports',null);return false;">Sports</a></li>
+          <li><a href="#" onclick="filterCat('world',null);return false;">World</a></li>
+          <li><a href="#" onclick="filterCat('technology',null);return false;">Technology</a></li>
+        </ul>
+        <h3>Tags</h3>
+        <div class="tag-cloud">
+          <a href="#">Balen Shah</a><a href="#">Budget 2026</a><a href="#">Cricket</a>
+          <a href="#">Kabaddi</a><a href="#">NEPSE</a><a href="#">Asian Games</a>
+          <a href="#">FIFA 2026</a><a href="#">Hydropower</a><a href="#">NRB</a>
+          <a href="#">Sandeep Lamichhane</a><a href="#">SpaceX</a><a href="#">Tourism</a>
+        </div>
+        <h3>Photo Gallery</h3>
+        <div class="photo-grid">
+          <img src="images/_thumb3.jpg" alt="Photo 1" onerror="this.outerHTML='&lt;div&gt;&lt;/div&gt;'"/>
+          <img src="images/_thumb4.jpg" alt="Photo 2" onerror="this.outerHTML='&lt;div&gt;&lt;/div&gt;'"/>
+          <img src="images/_thumb5.jpg" alt="Photo 3" onerror="this.outerHTML='&lt;div&gt;&lt;/div&gt;'"/>
+          <img src="images/_thumb6.jpg" alt="Photo 4" onerror="this.outerHTML='&lt;div&gt;&lt;/div&gt;'"/>
+          <img src="images/_thumb7.jpg" alt="Photo 5" onerror="this.outerHTML='&lt;div&gt;&lt;/div&gt;'"/>
+          <img src="images/_thumb8.jpg" alt="Photo 6" onerror="this.outerHTML='&lt;div&gt;&lt;/div&gt;'"/>
+        </div>
+        <h3>Featured Video</h3>
+        <div style="background:#111;height:130px;display:flex;align-items:center;justify-content:center;margin-bottom:10px;overflow:hidden;">
+          <img src="images/_video.jpg" alt="Featured video" style="width:100%;height:130px;object-fit:cover;"
+               onerror="this.parentElement.innerHTML='&lt;span style=&quot;color:#555;font-size:36px;&quot;&gt;&#9654;&lt;/span&gt;'"/>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ABOUT PAGE -->
+<div id="page-about" style="display:none;">
+  <div id="main">
+    <main id="content" role="main" style="padding-bottom:30px;">
+      <div class="single">
+        <h2>About Sandesh</h2>
+        <p><strong>Sandesh (सन्देश)</strong> is Nepal's trusted online news portal, delivering accurate, timely and independent journalism.</p>
+        <p>We cover Nepal's politics, economy, society, sports, and the world — in one place. Our mission is to keep Nepali communities at home and abroad fully informed, from parliamentary debates in Singha Durbar to cricket results in Singapore.</p>
+        <p>Based in Pokhara, Gandaki Province, Nepal. For editorial or partnership enquiries please use our <a href="#" onclick="showPage('contact');return false;">Contact page</a>.</p>
+      </div>
+    </main>
+    <aside id="sidebar"><div class="sidebar-inner">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#" onclick="showPage('home');return false;">Home</a></li>
+        <li><a href="#" onclick="showPage('about');return false;">About Us</a></li>
+        <li><a href="#" onclick="showPage('contact');return false;">Contact</a></li>
+      </ul>
+    </div></aside>
+  </div>
+</div>
+
+<!-- CONTACT PAGE -->
+<div id="page-contact" style="display:none;">
+  <div id="main">
+    <main id="content" role="main" style="padding-bottom:30px;">
+      <div class="single">
+        <h2>Contact Us</h2>
+        <p>Have a news tip, story idea, or feedback? Our editorial team will respond shortly.</p>
+        <p><strong>Email:</strong> sandeshpoudelsharma@gmail.com &nbsp;·&nbsp; <strong>Phone:</strong> +977 9842848766</p>
+        <p><strong>Address:</strong> Pokhara, Gandaki Province, Nepal</p>
+      </div>
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <label for="c-name">Name (required)</label>
+        <input type="text" id="c-name" placeholder="Your full name"/>
+        <label for="c-email">Email (required)</label>
+        <input type="text" id="c-email" placeholder="your@email.com"/>
+        <label for="c-web">Website</label>
+        <input type="text" id="c-web" placeholder="https://"/>
+        <label for="c-msg">Message</label>
+        <textarea id="c-msg" placeholder="Write your message here…"></textarea>
+        <button type="button" onclick="alert('Thank you! Your message has been received by Sandesh.')">Send Message</button>
+      </div>
+    </main>
+    <aside id="sidebar"><div class="sidebar-inner">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#" onclick="showPage('home');return false;">Home</a></li>
+        <li><a href="#" onclick="showPage('about');return false;">About Us</a></li>
+        <li><a href="#" onclick="showPage('contact');return false;">Contact</a></li>
+      </ul>
+    </div></aside>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer id="footer" role="contentinfo">
+  <p>&copy; 2026 <a href="#">Sandesh.com.np</a> &middot; Pokhara, Nepal &middot; All Rights Reserved</p>
+  <p>&copy; Email:  <a href="#">sandeshpoudelsharma@gmail.com</a> &middot;  &middot;  </p>
+  <nav class="footer-links" aria-label="Footer navigation">
+    <a href="#" onclick="showPage('home');return false;">Home</a>
+    <a href="#" onclick="showPage('about');return false;">About</a>
+    <a href="#" onclick="showPage('contact');return false;">Contact</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Sitemap</a>
+  </nav>
+</footer>
+</div>
+
+<script>
+(function(){
+  var d=new Date();
+  var opts={weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  var el=document.getElementById('todays-date');
+  if(el) el.textContent=d.toLocaleDateString('en-NP',opts);
+})();
+
+var PAGES=['home','about','contact'];
+function showPage(p){
+  PAGES.forEach(function(id){
+    var el=document.getElementById('page-'+id);
+    if(el) el.style.display=(id===p)?'':'none';
+    var nav=document.getElementById('nav-'+id);
+    if(nav) nav.classList.toggle('active',id===p);
+  });
+  window.scrollTo(0,0);
+}
+
+function filterCat(cat,clicked){
+  document.querySelectorAll('.catnav a').forEach(function(a){a.classList.remove('active');});
+  if(clicked) clicked.classList.add('active');
+  document.querySelectorAll('.post').forEach(function(post){
+    var cats=(post.getAttribute('data-cat')||'').split(' ');
+    post.style.display=(cat==='all'||cats.indexOf(cat)!==-1)?'':'none';
+  });
+  document.querySelectorAll('.sec-label').forEach(function(lbl){
+    var lc=lbl.getAttribute('data-cat')||'';
+    lbl.style.display=(cat==='all'||lc===cat)?'':'none';
+  });
+  document.querySelectorAll('.post-grid,.two-col').forEach(function(g){
+    var vis=Array.from(g.querySelectorAll('.post')).filter(function(p){return p.style.display!=='none';});
+    g.style.display=vis.length?'':'none';
+  });
+}
+
+function doSearch(e){
+  e.preventDefault();
+  var q=document.getElementById('sb-q')||document.getElementById('mobile-q');
+  if(q&&q.value.trim()) alert('Searching: "'+q.value.trim()+'"\n\nConnect your search backend here.');
+}
+
+var ham=document.getElementById('hamburger');
+var catnav=document.getElementById('catnav');
+if(ham&&catnav){
+  ham.addEventListener('click',function(){
+    var open=catnav.classList.toggle('catnav-open');
+    ham.setAttribute('aria-expanded',open?'true':'false');
+  });
+}
+
+var ti=document.querySelector('.ticker-inner');
+if(ti){
+  ti.addEventListener('mouseenter',function(){ti.style.animationPlayState='paused';});
+  ti.addEventListener('mouseleave',function(){ti.style.animationPlayState='running';});
+}
+</script>
+</body>
+</html>
